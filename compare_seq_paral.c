@@ -25,7 +25,7 @@ int main(){
     for(int i = 0; i < NR; i++){
         int sum = 0;
         for(int j = 0; j < NF; j++){
-            sum += A[j + i] * F[j];
+            sum += A[j + i] * F[NF - j - 1];
         }
         seq[i] = sum;
     }
@@ -37,7 +37,7 @@ int main(){
     for(int i = 0; i < NR; i++){
         int sum = 0;
         for(int j = 0; j < NF; j++){
-            sum += A[j + i] * F[j];
+            sum += A[j + i] * F[NF - j - 1];
         }
         paral[i] = sum;
     }
